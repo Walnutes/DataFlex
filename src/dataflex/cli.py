@@ -146,7 +146,7 @@ def patch_reorder_get_dataset(cfg):
 
     from dataflex.core.registry import REGISTRY
     from dataflex.train.data.loader import make_reorder_get_dataset
-    from dataflex.train.reorderer import resolve_reorderer_kind  # also registers the reorderers
+    from dataflex.train.reorder import resolve_reorderer_kind  # also registers the reorderers
 
     params = load_component('reorderers', cfg_file, name, runtime_vars={})
     kind = resolve_reorderer_kind(name, params)

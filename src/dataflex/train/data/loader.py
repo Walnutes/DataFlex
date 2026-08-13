@@ -274,7 +274,7 @@ def make_reorder_get_dataset(reorderer_factory):
             if dataset is not None:
                 score_path = reorderer.score_params.get("score_path")
                 if score_path:
-                    from ..reorderer.score_provider import PrecomputedScoreProvider
+                    from ..reorder.score_provider import PrecomputedScoreProvider
 
                     scores = np.asarray(
                         PrecomputedScoreProvider(
