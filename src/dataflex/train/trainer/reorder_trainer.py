@@ -7,7 +7,7 @@ from dataflex.core.registry import REGISTRY
 from dataflex.utils.load_component import load_component
 from dataflex.utils.logging import logger
 
-from dataflex.train.reorderer import resolve_reorderer_kind  # also registers the reorderers
+from dataflex.train.reorder import resolve_reorderer_kind  # also registers the reorderers
 
 from .select_trainer import SelectTrainer
 
